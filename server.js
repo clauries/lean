@@ -13,6 +13,9 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
+//require("./routes/api-routes.js")(app);
+require("./routes/html-routes.js")(app);
+
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/leanfitness", { useNewUrlParser: true });
 
 app.listen(PORT, () => {
