@@ -2,6 +2,7 @@
 
 # Lean Fitness
 A fitness tracking app.
+Lean on us to remember your workouts.
 
 <img src="#" alt="App Image"/>
 
