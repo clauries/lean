@@ -1,7 +1,9 @@
-async function init() {
+async function initWorkout() {
   const lastWorkout = await API.getLastWorkout();
   console.log(lastWorkout);
+  if (lastWorkout) {
 
+  
   document
     .querySelector("a[href='/exercise?']")
     .setAttribute("href", `/exercise?id=${lastWorkout._id}`);
@@ -14,6 +16,9 @@ async function init() {
   };
 
   renderWorkoutSummary(workoutSummary);
+} else {
+  renderNoWorkoutText();
+}
 }
 
 function tallyExercises(exercises) {
@@ -68,4 +73,14 @@ function renderWorkoutSummary(summary) {
   });
 }
 
-init();
+function renderNoWorkoutText() {
+  const container = document.querySelector(".workout-stats");
+  const p = document.createElement("p");
+  const strong = document.createElement("strong");
+  strong.textContent = "You have not created a workout yet!"
+
+  p.appendChild(strong);
+  container.appendChild(p);
+}
+
+initWorkout();
