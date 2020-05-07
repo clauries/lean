@@ -4,11 +4,12 @@
 A fitness tracking app.
 Lean on us to remember your workouts.
 
-<img src="#" alt="App Image"/>
+<img src="#" alt="No current image"/>
 
-#### [Deployed App](#)
+#### [Placeholder for link to Deployed App](#)
 
 ## Concept
+As an individual getting back into fitness, I want a simple app to track my workouts, so that I can effectively monitor my activity levels and abilities. 
 
 ## Installation and Usage
 1. Install the required modules by typing "npm install" or "npm i" using your code editor terminal; must be at the same level as the package.json.
@@ -30,9 +31,10 @@ Lean on us to remember your workouts.
 * MongoDB
 
 ## Future Development
-
+This app is in the build process. 
 
 ## Credits
+Front end was provided by Trilogy Education Services as a part of their Coding Bootcamp Curriculum.
 
 
 ## License
